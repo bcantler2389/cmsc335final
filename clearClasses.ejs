@@ -1,0 +1,27 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<title>Remove Classes</title>
+</head>
+
+<body>
+	<p>Enter student ID to remove all current classes from you schedule for Fall 2022.</p>
+	<form action="/clearClasses" method="post" onsubmit= "return confirm('Are you sure you want to remove all of your current classes? (This will remove you from all of the classes you are currently enrolled in)');">
+        <div class="gpaDiv">
+            <label><strong>Student ID: </strong> <input required type="number" name="studentID" min="1000" max="9999"/></label>
+            <br>
+            <br>
+            <input type="submit" value="Remove all of my current classes"/>
+        </div>
+	
+        <br>
+		<a class="url" href=<%- URL %>>back</a>
+		
+	</form>
+</body>
+
+</html>
