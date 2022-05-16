@@ -1,0 +1,27 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+	<title>Teachers</title>
+</head>
+
+<body>
+	<p>Enter a class to see all teachers who have taught it</p>
+	<form action="/teachers" method="post">
+		<div class="gpaDiv">    
+			<label>Class code: <input type="text" name="classCode"></label>
+            <br>
+            <input type="submit" value="Submit"/>
+
+		</div>
+		
+		<br>
+		<a class="url" href=<%- URL %>>back</a>
+		
+	</form>
+</body>
+
+</html>

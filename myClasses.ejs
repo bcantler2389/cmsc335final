@@ -1,0 +1,30 @@
+<!-- DO NOT MODIFY THIS FILE -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>My Classes</title>
+    <link rel="stylesheet" type="text/css" href="/styles/style.css">
+</head>
+
+<body>
+	
+	<form action="/myClasses" method="post">
+        <p> Enter your student ID to see all classes you are signed up for Fall 2022. </p>
+		<div class="myClassesDiv">    
+            
+			<label>Student ID: <input required type="number" name="studentID" min="1000" max="9999"/></label>
+            <br>
+            <br>
+            <input type="submit" value="Submit Request"/>
+		</div>
+		
+        <br>
+        <br>
+		<a class= "url" href=<%- URL %>>back</a>
+		
+	</form>
+</body>
+
+</html>
